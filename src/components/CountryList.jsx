@@ -24,7 +24,6 @@ export const CountryList = ({countries,setcountries}) => {
                     <h3 className='card-title'>{country.countryName}</h3>
                     <button className="btn btn-warning me-2" onClick={()=>editCountry(country.id)}>Edit</button>
                     <button className="btn btn-danger me-2" onClick={()=>deleteCountry(country.id)}>Delete</button>
-                    
                     <StateList country={country} countries={countries} setcountries={setcountries}/>
                 </div>
             </div>
