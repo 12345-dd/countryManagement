@@ -15,7 +15,9 @@ function App() {
   return (
     <div className="container mt-4">
       <h1 className="text-center">Country, State and City Management</h1>
-      <button className="btn btn-primary mb-3" onClick={addCountry}>Add Country</button>
+      <div className="text-center">
+        <button className="btn btn-primary mb-3" onClick={addCountry}>Add Country</button>
+      </div>
       <CountryList countries={countries} setcountries={setcountries}/>
     </div>
   )

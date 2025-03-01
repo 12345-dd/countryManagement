@@ -37,7 +37,7 @@ export const CityList = ({state,countryId,countries,setcountries}) => {
       };
   return (
     <div className="ms-5 mt-2">
-        <button className="btn btn-info mb-2" onClick={addCity}>Add City</button>
+        <button className="btn btn-info mb-4" onClick={addCity}>Add City</button>
         {state.cities.map((city) => (
             <div key={city.id} className="alert alert-primary d-flex justify-content-between">
                 <span>{city.name}</span>
