@@ -1,0 +1,26 @@
+.country-card {
+    margin: 10px 0;
+    border-left: 5px solid blue;
+    background-color: #f8f9fa;
+}
+  
+.state-card {
+    margin: 5px 0;
+    border-left: 5px solid green;
+    background-color: #e9f7ef;
+}
+  
+button {
+    margin-right: 5px;
+}
+  
+  
+.city-alert {
+    margin: 5px 0;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #d1ecf1;
+    border-left: 5px solid teal;
+}
+  
