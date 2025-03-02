@@ -12,7 +12,7 @@ export const CountryList = ({countries,setcountries}) => {
     }
 
     const deleteCountry = (id) => {
-        if(window.confirm("Are you really want to delete?")){
+        if(window.confirm("Are you sure you want to delete this country?")){
             setcountries(countries.filter((country) => country.id !== id))
         }
     }
