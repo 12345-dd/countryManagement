@@ -21,9 +21,13 @@ export const CountryList = ({countries,setcountries}) => {
         {countries.map((country)=>(
             <div className="card country-card">
                 <div className='card-body'>
-                    <h3 className='card-title'>{country.countryName}</h3>
-                    <button className="btn btn-warning me-2" onClick={()=>editCountry(country.id)}>Edit</button>
-                    <button className="btn btn-danger me-2" onClick={()=>deleteCountry(country.id)}>Delete</button>
+                    <div className='d-flex justify-content-between'>
+                        <h3 className='card-title'>{country.countryName}</h3>
+                        <div className='d-flex justify-content-end'>
+                            <button className="btn btn-warning me-2" onClick={()=>editCountry(country.id)}>Edit</button>
+                            <button className="btn btn-danger me-2" onClick={()=>deleteCountry(country.id)}>Delete</button>
+                        </div>
+                    </div>
                     <StateList country={country} countries={countries} setcountries={setcountries}/>
                 </div>
             </div>

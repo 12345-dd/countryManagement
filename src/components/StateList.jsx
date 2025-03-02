@@ -41,10 +41,14 @@ export const StateList = ({country,countries,setcountries}) => {
         {country.states.map((state) => (
             <div className="card state-card">
                 <div className="card-body">
+                  <div className='d-flex justify-content-between'>
                     <h4>{state.name}</h4>
-                    <button className="btn btn-warning me-2" onClick={() => editState(state.id)}>Edit</button>
-                    <button className="btn btn-danger" onClick={() => deleteState(state.id)}>Delete</button>
-                    <CityList state={state} countryId={country.id} countries={countries} setcountries={setcountries} />
+                    <div className='d-flex justify-content-end'>
+                      <button className="btn btn-warning me-2" onClick={() => editState(state.id)}>Edit</button>
+                      <button className="btn btn-danger" onClick={() => deleteState(state.id)}>Delete</button>
+                    </div>
+                  </div>
+                  <CityList state={state} countryId={country.id} countries={countries} setcountries={setcountries} />
                 </div>
             </div>
         ))}
